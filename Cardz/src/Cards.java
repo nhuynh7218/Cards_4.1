@@ -37,9 +37,20 @@ public class Cards {
 		this.pointValue = pointValue;
 	}
 	
-	public boolean equals()
+	public boolean equals(Cards original, Cards comparing)
 	{
-		
+		if (original.getPointValue() == comparing.getPointValue())
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
 	
+	public String toString()
+	{
+		return("Card: "+ rank + suit + "value: "+ pointValue);
+	}
 }
