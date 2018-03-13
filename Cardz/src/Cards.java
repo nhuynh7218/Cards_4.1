@@ -8,7 +8,7 @@ public class Cards {
 	{
 		this.rank = rank;
 		this.suit = suit;
-		
+		this.pointValue = pointValue;
 	}
 	public Deck(String [] rank, String [] suit, int pointValue)
 	{
