@@ -14,4 +14,27 @@ public class DeckOfCards {
 			}
 		}
 	}
+	
+	public boolean isEmpty()
+	{
+		if(unDealt.size()==0)
+		{
+			return true;
+		}
+		return false;
+	}
+	
+	public int size()
+	{
+		return (unDealt.size());
+	}
+	
+	public static deal()
+	{
+		for(int i = 0; i < unDealt.size; i++)
+		{
+			
+		}
+	}
 }
+
