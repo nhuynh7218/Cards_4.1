@@ -1,12 +1,12 @@
 
-public class Cards {
+public class Card {
 	//fields
 	String rank;
 	String suit;
 	int pointValue;
 	
 	//Constructor
-	public Cards(String rank, String suit, int pointValue)
+	public Card(String rank, String suit, int pointValue)
 	{
 		this.rank = rank;
 		this.suit = suit;
@@ -37,7 +37,7 @@ public class Cards {
 		this.pointValue = pointValue;
 	}
 	
-	public boolean equals(Cards original, Cards comparing)
+	public boolean equals(Card original, Card comparing)
 	{
 		if (original.getPointValue() == comparing.getPointValue())
 		{
