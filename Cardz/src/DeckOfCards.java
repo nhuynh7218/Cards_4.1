@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+
 public class DeckOfCards {
 	public static ArrayList<Card>unDealt = new ArrayList<Card>();
 	public static ArrayList<Card>dealt =  new ArrayList<Card>();
@@ -44,9 +45,9 @@ public class DeckOfCards {
 	
 	public void shuffle()
 	{
-		for(int k = 51; k >= 0; k--)
+		for(int k = 51; k >= 1; k--)
 		{
-			
+			int r = Math.random()*10;
 		}
 	}
 }
