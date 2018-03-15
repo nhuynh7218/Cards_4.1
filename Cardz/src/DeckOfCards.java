@@ -29,9 +29,19 @@ public class DeckOfCards {
 		return (unDealt.size());
 	}
 	
-	public static deal()
+	public Cards deal()
 	{
-		for(int i = 0; i < unDealt.size; i++)
+		if(unDealt.size() > 0)
+		{
+			return unDealt(0);
+			
+		}
+		return null;
+	}
+	
+	public void shuffle()
+	{
+		for(int k = 51; k >= 0; k--)
 		{
 			
 		}
