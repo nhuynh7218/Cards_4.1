@@ -1,10 +1,27 @@
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class DeckOfCards {
 	public static ArrayList<Card>unDealt = new ArrayList<Card>();
 	public static ArrayList<Card>dealt =  new ArrayList<Card>();
 	
+	public static ArrayList<Card> getUnDealt() {
+		return unDealt;
+	}
+
+	public static void setUnDealt(ArrayList<Card> unDealt) {
+		DeckOfCards.unDealt = unDealt;
+	}
+
+	public static ArrayList<Card> getDealt() {
+		return dealt;
+	}
+
+	public static void setDealt(ArrayList<Card> dealt) {
+		DeckOfCards.dealt = dealt;
+	}
+
 	public DeckOfCards(String [] rank, String [] suit, int [] pointValue)
 	{
 		for(int i = 0; i < rank.length; i++)
@@ -30,7 +47,7 @@ public class DeckOfCards {
 		return (unDealt.size());
 	}
 	
-	public Card deal()
+	public static Card deal()
 	{
 		if(unDealt.size() == 0)
 		{
@@ -43,11 +60,14 @@ public class DeckOfCards {
 		
 	}
 	
-	public void shuffle()
+	public static void shuffle()
 	{
-		for(int k = 51; k >= 1; k--)
+		for(int k = 0; k < unDealt.size(); k++)
 		{
-			int r = Math.random()*10;
+			int randomIndex = (int)Math.random()*k;
+			Card temp = unDealt.get(0);
+			unDealt.set();
+			unDealt.set(randomIndex, temp);
 		}
 	}
 }
