@@ -1,4 +1,4 @@
-
+//Nicholas Huynh
 public class Card {
 	//fields
 	String rank;
@@ -36,7 +36,7 @@ public class Card {
 	public void setPointValue(int pointValue) {
 		this.pointValue = pointValue;
 	}
-	
+	//compares and sees if 1 card is equal to another
 	public boolean equals(Card original, Card comparing)
 	{
 		if (original.getPointValue() == comparing.getPointValue())

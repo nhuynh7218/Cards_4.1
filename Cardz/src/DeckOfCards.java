@@ -32,7 +32,7 @@ public class DeckOfCards {
 			}
 		}
 	}
-	
+	//checks to see if the deck is empty
 	public boolean isEmpty()
 	{
 		if(unDealt.size()==0)
@@ -62,13 +62,16 @@ public class DeckOfCards {
 	
 	public static void shuffle()
 	{
-		for(int k = 0; k < unDealt.size(); k++)
+		unDealt.addAll(getDealt());
+		
+		for (int k = 1; k < 52; k++)
 		{
-			int randomIndex = (int)Math.random()*k;
-			Card temp = unDealt.get(0);
-			unDealt.set();
-			unDealt.set(randomIndex, temp);
+			int r = (int)(Math.random()*k);
+			Card temp = unDealt.get(r);
+			unDealt.set(r, unDealt.get(k));
+			unDealt.set(k, temp);
 		}
 	}
 }
+
 
